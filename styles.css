@@ -41,7 +41,7 @@ header {
     position: relative;
     transform: scale(1.1);
 }
-.left_items {
+nav {
     display: flex;
 }
 ul {
@@ -79,15 +79,17 @@ table {
 /*INDEX MAIN*/
 main {
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 h1 {    
     font-family: 'Bangers', cursive;
-    font-size: 14vw;
+    font-size: 13vw;
     position: absolute;
     z-index: 1;
     color: white;
     letter-spacing: .2vw;
-    left: 50%;
+    left: 49%;
     top: 11%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -100,17 +102,22 @@ h2 {
     z-index: 2;
     color: white;
     left: 50%;
-    top: 23%;
-    transform: translate(-50%, -50%);
     background-color: rgb(255, 55, 0);
     padding: 0px 30px 0px 20px;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 7vw;
+    white-space: nowrap;
+    font-size: 6vw;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
 }
-h2:hover {
-    transform: translate(-50%, -50%) scale(1.2);
+.see_menu {
+    left: 50%;
+    top: 23%;
+    transform: translate(-50%, -50%);
+}
+.see_menu:hover {
+    transform: translate(-50%, -50%) scale(1.1);
 }
 .video_wrapper {
     position: relative;
@@ -128,15 +135,15 @@ h2:hover {
 /* MENU MAIN */
 section {
     background-color: black;
-    justify-content: center;
+}
+.menu_section{
     display: flex;
-    width: 100%;
+    justify-content: center;
 }
 .menu_outer {
     display: flex;
     background-color: #393939;
-    flex-basis: 1600px;
-    justify-content: space-around;
+    max-width: 1600px;
     border-radius: 5px;
     margin: 20px 40px;
 }
@@ -152,7 +159,7 @@ section {
     display: flex;
     flex-direction: column;
     flex-basis: 135px;
-    background-color: #797979;
+    background-color: #4a4a4a;
     padding: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -167,12 +174,14 @@ section {
     margin-bottom: 0px;
     }
 .item_title{
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bolder;
     margin-bottom: 4px;
+    color: white;
 }
 .item_description {
     font-size: 15px;
+    color: white;
 }
 .item_price {
     display: inline-block;
@@ -180,7 +189,7 @@ section {
     top: 5%;
     right: 2%;
     font-family: 'Bangers', cursive;
-    font-size: 1.2vw;
+    font-size: 18px;
     letter-spacing: 1px;
     background-color: rgb(255, 55, 0);
     color: white;
@@ -206,13 +215,18 @@ article{
     line-height: 1.5;
 }
 /* FIND US MAIN */
+.findus_section {
+    justify-content: center;
+    display: flex;
+}
 .findus_wrapper {
     border-radius: 5px;
     display: flex;
     background-color: #393939;
     padding: 20px;
-    margin: 40px;
+    margin: 30px 0px 100px 0px;
     flex-basis: 700px;
+    overflow: hidden;
 }
 .findus_content {
     display: flex;
@@ -227,6 +241,84 @@ p {
 .address {
     font-size: 30px;
     margin-top: 25px;
+}
+.form_shape_1 {
+    position: absolute;
+    width: 130vw;
+    height: 300px;
+    rotate: 3deg;
+    background-color: #3293FF;
+    z-index: 1;
+    margin-left: -50px;
+    margin-top: -50px;
+
+}
+.form_shape_2 {
+    position: absolute;
+    width: 130vw;
+    height: 200px;
+    rotate: 357deg;
+    background-color:#FF9E32;
+    z-index: 0;
+    margin-left: -50px;
+    margin-top: -60px;
+}
+.shape_wrapper {
+    position: relative;
+}
+.phone_us {
+    position: absolute;
+    font-family: 'Bangers', cursive;
+    color: white;
+    background-color: #FF9E32;
+    padding: 0px 30px 0px 20px;
+    color: white;
+    font-size: 110px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    margin-bottom: 600px;
+}
+.phone_number {
+    position: absolute;
+    font-family: 'Bangers', cursive;
+    color: white;
+    background-color: rgb(255, 55, 0);
+    padding: 0px 30px 0px 20px;
+    color: white;
+    font-size: 90px;
+    z-index: 3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    margin-bottom: 525px;
+}
+.form_section {
+    position: relative;
+    background-color: #3293FF;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.form_wrapper {
+    position: relative;
+}
+input {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+}
+#input_name {
+    width: 400px;
+}
+#input_email {
+    width: 400px;
+}
+#input_text {
+    width: 400px;
+    height: 200px;
 }
 /*FOOTER*/
 footer {
