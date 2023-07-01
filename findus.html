@@ -24,15 +24,15 @@
 <body>
 
     <header>
-        <div class="left_items">
+        <nav class="left_items">
             <div class="logo_background"></div>
             <a href="index.html"><img class="header_logo" src="media/churburger_logo.png" width="300" alt="Churburer Logo"></a>
             <ul>
-                <li ><a class="CTA" href="menu.html">Menu</a></li>
+                <li><a class="CTA" href="menu.html">Menu</a></li>
                 <li><a href="about.html">About Churburger</a></li>
-                <li><a href="findus.html">Find Us</a></li>
+                <li><a href="findus.html" style="color: white;">Find Us</a></li>
             </ul>
-        </div>
+        </nav>
         <table class="right_items">
             <tr>
                 <th>Tuesday - Friday</th>
@@ -44,13 +44,13 @@
             </tr>
             <tr>
                 <th>Sunday - Monday</th>
-                <td>Closed 😥</td>
+                <td>Closed</td>
             </tr>
         </table>
     </header>
 
     <main>
-        <section>
+        <section class="findus_section">
             <div class="findus_wrapper">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.4098490664605!2d172.6387748416526!3d-43.53790927942366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d318a192819fe85%3A0xdb9765d1a66c40c3!2s167%20Madras%20Street%2C%20Christchurch%20Central%20City%2C%20Christchurch%208011!5e0!3m2!1sen!2snz!4v1687901904146!5m2!1sen!2snz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="findus_content">
@@ -60,14 +60,29 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="shape_wrapper">
+                <div class="form_shape_1"></div>
+                <div class="form_shape_2"></div>
+            </div>
+        </section>
+        <section class="form_section">
+            <h2 class="phone_us">Call us to order!</h2>
+            <h3 class="phone_number">0800 *** **9</h3>
+             <div class="form_wrapper">
+                <h3>Send us an email</h3>
+                <form action="_">
+                    <input type="text" id="input_name" name="name"><br>
+                    <input type="text" id="input_email" name="email"><br>
+                    <input type="text" id="input_text" name="text"><br>
+                </form>
+            </div>
+        </section>
     </main>
-
     <footer>
         <a href=""><img class="social_icons" src="media/facebook.png" alt="Link to Churburgers Facebook page"></a>
         <a href=""><img class="social_icons" src="media/instagram.png" alt="Link to Churburgers Instragram page"></a>
         <a href=""><img class="social_icons" src="media/sharethis.png" alt="Link to Share the Churburger website url"></a>
-
     </footer>
-
 </body>
 </html>
