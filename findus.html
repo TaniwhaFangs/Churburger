@@ -27,7 +27,7 @@
         <nav class="left_items">
             <div class="logo_background"></div>
             <a href="index.html"><img class="header_logo" src="media/new_new_logo.png" width="300" alt="Churburer Logo"></a>
-            <ul>
+            <ul class="header_list">
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About Churburger</a></li>
                 <li><a href="findus.html" style="color: white;">Find Us</a></li>
@@ -38,9 +38,15 @@
                 <div class="cta_top">Call us to order!</div>
                 <div class="cta_bottom">0800 *** **9</div>
             </div>
-            <a href=""><img class="hamburger_button" src="media/hamburger_button.png"></a>
+            <a href="javascript:void(0);"><img class="hamburger_button" src="media/hamburger_button.png" onclick="myFunction()"></a>           
     </header>
-
+    <div id="menu_select" style="display:none;">
+        <ul>
+            <li ><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Churburger</a></li>
+            <li><a href="findus.html" style="color: white;">Find Us</a></li>
+        </ul>
+    </div>
     <main>
         <section class="findus_section">
             <div class="findus_wrapper">
@@ -70,14 +76,15 @@
                 <div class="form_shape_2"></div>
             </div>
         <section class="form_section">
-            <h2 class="phone_us">Call us to order!</h2>
-            <h3 class="phone_number">0800 *** **9</h3>
+            <h2 class="phone_us">Got feedback?</h2>
+            <h3 class="phone_number">Send it our way!</h3>
              <div class="form_wrapper">
-                <h3>Send us an email</h3>
+                <h3></h3>
                 <form action="_">
-                    <input type="text" id="input_name" name="name"><br>
-                    <input type="text" id="input_email" name="email"><br>
-                    <input type="text" id="input_text" name="text"><br>
+                    <input type="text" id="input_name" name="name" placeholder="Name"><br>
+                    <input type="email" id="input_email" name="email" placeholder="Email"><br>
+                    <textarea type="text" id="input_text" name="text" placeholder="Enter your message"></textarea><br>
+                    <button type="button">Send</button>
                 </form>
             </div>
         </section>
@@ -87,5 +94,6 @@
         <a href=""><img class="social_icons" src="media/instagram.png" alt="Link to Churburgers Instragram page"></a>
         <a href=""><img class="social_icons" src="media/sharethis.png" alt="Link to Share the Churburger website url"></a>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
