@@ -52,15 +52,11 @@ header {
 nav {
     display: flex;
 }
-li {
-    font-size: 1px;
-}
 ul {
     display: flex;
     align-items: center;
     gap: 40px;
     margin-left: 40px;
-    text-decoration: none;
     list-style-type: none;
 }
 li:hover {
